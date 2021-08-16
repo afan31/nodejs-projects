@@ -3,7 +3,7 @@ const yargs = require('yargs')
 const notes = require('./notes.js')
 
 // customize yargs version
-
+debugger
 yargs.version('1.1.0')
 
 // add , remove, read, list
