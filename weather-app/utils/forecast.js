@@ -13,7 +13,7 @@ const forecast = (lat, long, callback) => {
             const feelsLike = currWeatherData.feelslike
             const ans = currWeatherData.weather_descriptions[0] +'. It is currently '+temp+' degrees out. It feels like ' + feelsLike + ' degrees out.'
             callback(undefined, {
-              data: ans
+              ans
             })
         }
   })
