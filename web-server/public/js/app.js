@@ -8,7 +8,7 @@ weatherForm.addEventListener('submit', (event) => {
   message1.textContent= "Loading..."
   message2.textContent = ""
   const location = search.value
-  fetch('http://ah-afankhan-maci.dhcp.mathworks.com:4000/weather?address='+location).then((response) => {
+  fetch('/weather?address='+location).then((response) => {
     response.json().then((data) => {
       if (data.error){
         message1.textContent= data.error
